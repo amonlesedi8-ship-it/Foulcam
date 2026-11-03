@@ -1,0 +1,33 @@
+  {
+  "expo": {
+    "name": "FoulCam",
+    "slug": "foulcam",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.foulcam.matchrecorder",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.foulcam.matchrecorder",
+      "infoPlist": {
+        "NSCameraUsageDescription": "FoulCam uses the camera to record football matches.",
+        "NSMicrophoneUsageDescription": "FoulCam uses the microphone to record match audio."
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow FoulCam to use the camera to record matches.",
+          "microphonePermission": "Allow FoulCam to record match audio."
+        }
+      ]
+    ]
+  }
+}
